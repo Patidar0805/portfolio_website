@@ -1028,7 +1028,6 @@ footer a {
         transform: translateY(0);
     }
 }
-
 /*Break Point----------------------------------------------------------------------------------*/
 
 @media(max-width:991px) {
@@ -1157,11 +1156,7 @@ footer a {
         font-size: 1rem;
     }
 
-    .skill-main {
-
-        grid-template-columns: 2fr;
-    }
-    .introgif{
-        justify-content: center;   
+    .introgif {
+        height: 113vh;
     }
 }
