@@ -9,13 +9,12 @@ window.addEventListener('DOMContentLoaded', () => {
     }, 3000); // Keep the intro visible for 5 seconds
   });
   
-  
-// intro animation--------------------------------------------------------------------------
+// inrto animation--------------------------------------------------------------------------
 let intro=document.querySelector('.intro1');
 let logo=document.querySelector('.logo1');
 let logoSpan=document.querySelectorAll('.logo-parts1');
 
-window.addEventListener('DOMContentLoaded', ()=>{
+ window.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(()=>{
         logoSpan.forEach((span, index)=>{
             setTimeout(() => {
@@ -38,7 +37,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
         },2300)
 
     });
-});
+ });
 
 
 
@@ -163,3 +162,7 @@ scrollBottom.forEach((el)=>observer.observe(el));
 
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observe(el)); 
+ 
+
+
+   
