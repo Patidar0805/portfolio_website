@@ -1,26 +1,14 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const introgif = document.getElementById('introgif');
-    
-    // Set initial styles to make intro fill window
-    introgif.style.width = '100vw';
-    introgif.style.height = '100vh';
-    introgif.style.position = 'fixed';
-    introgif.style.top = '0';
-    introgif.style.left = '0';
-    introgif.style.zIndex = '9999';
 
-    // Make sure the gif inside also fills the container
-    const gifImage = introgif.querySelector('img');
-    if (gifImage) {
-        gifImage.style.width = '100%';
-        gifImage.style.height = '100%';
-        gifImage.style.objectFit = 'cover';
-    }
+
+window.addEventListener('DOMContentLoaded', () => {
+    const introgif = document.getElementById('introgif'); // Reference the intro gif div
   
     setTimeout(() => {
-        introgif.style.top = '-100vh';
-    }, 3000);
-});
+      // Move the intro out of view after 5 seconds
+      introgif.style.top = '-100vh'; 
+    }, 3000); // Keep the intro visible for 5 seconds
+  });
+  
   
 // intro animation--------------------------------------------------------------------------
 let intro=document.querySelector('.intro1');
