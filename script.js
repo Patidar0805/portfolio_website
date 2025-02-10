@@ -1,20 +1,33 @@
-
-
 window.addEventListener('DOMContentLoaded', () => {
-    const introgif = document.getElementById('introgif'); // Reference the intro gif div
+    const introgif = document.getElementById('introgif');
+    
+    // Set initial styles to make intro fill window
+    introgif.style.width = '100vw';
+    introgif.style.height = '100vh';
+    introgif.style.position = 'fixed';
+    introgif.style.top = '0';
+    introgif.style.left = '0';
+    introgif.style.zIndex = '9999';
+
+    // Make sure the gif inside also fills the container
+    const gifImage = introgif.querySelector('img');
+    if (gifImage) {
+        gifImage.style.width = '100%';
+        gifImage.style.height = '100%';
+        gifImage.style.objectFit = 'cover';
+    }
   
     setTimeout(() => {
-      // Move the intro out of view after 5 seconds
-      introgif.style.top = '-100vh'; 
-    }, 3000); // Keep the intro visible for 5 seconds
-  });
+        introgif.style.top = '-100vh';
+    }, 3000);
+});
   
-// inrto animation--------------------------------------------------------------------------
+// intro animation--------------------------------------------------------------------------
 let intro=document.querySelector('.intro1');
 let logo=document.querySelector('.logo1');
 let logoSpan=document.querySelectorAll('.logo-parts1');
 
- window.addEventListener('DOMContentLoaded', ()=>{
+window.addEventListener('DOMContentLoaded', ()=>{
     setTimeout(()=>{
         logoSpan.forEach((span, index)=>{
             setTimeout(() => {
@@ -37,7 +50,7 @@ let logoSpan=document.querySelectorAll('.logo-parts1');
         },2300)
 
     });
- });
+});
 
 
 
@@ -162,7 +175,3 @@ scrollBottom.forEach((el)=>observer.observe(el));
 
 const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el)=>observer.observe(el)); 
- 
-
-
-   
