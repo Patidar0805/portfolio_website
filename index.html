@@ -443,24 +443,30 @@
 
     <!-- contact section------------------------------------------------------------------------------------------------------------------->
 
-    <section id="contact" class="contact">
-        <div class="main-text scroll-scale">
-            <span>Ask me question</span>
-            <h2>Contact me</h2>
+   <section id="contact" class="contact">
+    <div class="main-text scroll-scale">
+        <span>Ask me a question</span>
+        <h2>Contact Me</h2>
+    </div>
+
+    <form action="https://formsubmit.co/himanshupatidar0805@gmail.com" method="POST" class="scroll-scale" autocomplete="off">
+
+        <!-- Disable captcha (optional) -->
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="text" name="name" required placeholder="Your Name">
+        <input type="email" name="email" required placeholder="Your Email">
+        <input type="text" name="subject" required placeholder="Your Subject">
+        <input type="number" name="number" required placeholder="Phone Number">
+
+        <textarea name="msg" cols="30" rows="10" required placeholder="Your Message"></textarea>
+
+        <div class="btn-box formBtn">
+            <button type="submit" class="btn">Send Message</button>
         </div>
-        <form action="https://formsubmit.com/himanshupatidar0805@gmail.com" method="POST" class="scroll-scale">
-            <input type="text" name="name" required placeholder="Your Name">
-            <input type="email" name="email" required placeholder="Your Email">
-            <input type="text" name="subject" required placeholder="Your Subject">
-            <input type="number" name="number" required placeholder="Phone Number">
-            <textarea name="msg" id="" cols="30" rows="10" required placeholder="Your message"></textarea>
-            <div class="btn-box formBtn">
-                <button type="submit" class="btn">Send Message</button>
-            </div> 
-        </form>
+    </form>
+</section>
 
-
-    </section>
 
     <footer>
         <p>Copyright &copy; 2023 by Himanshu || All right Reserved.</p>
